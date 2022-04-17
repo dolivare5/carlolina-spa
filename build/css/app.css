@@ -470,4 +470,44 @@ a {
     }
 }
 
+.navegacion {
+    background-color: #8ed3cc;
+    padding: 0.2rem 0;
+    margin: 2rem 0;
+}
+
+.navegacion__border {
+    border-block: 2px dashed #FFFFFF;
+    padding: 2rem 0;
+}
+
+.navegacion__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion__contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion__enlace {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.navegacion__enlace :last-of-type {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .navegacion__enlace {
+        margin-bottom: 0;
+    }
+}
+
 /*# sourceMappingURL=app.css.map */
