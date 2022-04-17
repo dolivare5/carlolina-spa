@@ -453,4 +453,21 @@ a {
     background-color: black;
 }
 
+.header {
+    padding-top: 5rem;
+}
+
+.header__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .header__grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 /*# sourceMappingURL=app.css.map */
