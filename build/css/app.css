@@ -562,4 +562,33 @@ a {
     display: block;
 }
 
+.bienvenida {
+    text-align: center;
+}
+
+.bienvenida__heading {
+    text-align: center;
+    color: #e082a8;
+    font-family: "Italianno", sans-serif;
+    line-height: 0.8;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 4rem;
+}
+
+.bienvenida__heading span {
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+}
+
+.bienvenida__texto {
+    font-size: 2.6rem;
+    color: #979797;
+    max-width: 50rem;
+    margin: 4rem auto 0 auto;
+    line-height: 1.8;
+}
+
 /*# sourceMappingURL=app.css.map */
