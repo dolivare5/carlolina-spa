@@ -679,4 +679,73 @@ a {
     background-color: #d6598c;
 }
 
+.horario {
+    background-image: linear-gradient(to bottom, #8ed3cc 0%, #8ed3cc 50%, transparent 50%), url("../img/bg_horarios.jpg");
+    background-repeat: no-repeat;
+    background-position: center, bottom center;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .horario {
+        background-image: linear-gradient(to right, #8ed3cc 0%, #8ed3cc 50%, transparent 50%), url("../img/bg_horarios.jpg");
+        background-position: center, top right;
+    }
+}
+
+.horario__grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .horario__grid {
+        grid-template-rows: unset;
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.horario__contenido {
+    padding: 5rem 0;
+}
+
+.horario__heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.horario__texto {
+    font-size: 2.2rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.tabla {
+    width: 100%;
+    border: 0.5rem solid #e082a8;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tabla__head {
+    background-color: #e082a8;
+}
+
+.tabla__th {
+    padding: 2rem;
+}
+
+.tabla__tr:hover {
+    background-color: #69c5bb;
+}
+
+.tabla__td {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
 /*# sourceMappingURL=app.css.map */
