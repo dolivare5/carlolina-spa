@@ -1,0 +1,51 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.swiper {
+    padding: 2rem 0;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+
+    &-slide {
+        height: 100%;
+        flex-shrink: 0;
+        width: 100%;
+        position: relative;
+        transition-property: transform;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &-imagen {
+        display: block;
+        width: 100%;
+    }
+
+    &-button-next, &-button-prev{
+        color: v.$blanco;
+        opacity: .5;
+    }
+
+    &-pagination{
+        bottom: 4rem;
+    }
+
+    &-pagination-bullet{
+        background-color: v.$blanco;
+    }
+
+    &-pagination-bullet-active{
+        background-color: v.$primario;
+    }
+
+    &-button-next:after, &-rtl &-button-prev:after{
+        margin-left: -11rem;
+    }
+
+    &-cube-shadow{
+        height: 1155px;
+        transform: translate3d(0px, 580.5px, -577.5px) rotateX(90deg) rotateZ(0deg) scale(0.94);
+    }
+
+}

@@ -449,6 +449,49 @@ a {
   background-color: black;
 }
 
+.swiper {
+  padding: 2rem 0;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+}
+.swiper-slide {
+  height: 100%;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-imagen {
+  display: block;
+  width: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.swiper-pagination {
+  bottom: 4rem;
+}
+.swiper-pagination-bullet {
+  background-color: #FFFFFF;
+}
+.swiper-pagination-bullet-active {
+  background-color: #8ed3cc;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  margin-left: -11rem;
+}
+.swiper-cube-shadow {
+  height: 1155px;
+  -webkit-transform: translate3d(0px, 580.5px, -577.5px) rotateX(90deg) rotateZ(0deg) scale(0.94);
+          transform: translate3d(0px, 580.5px, -577.5px) rotateX(90deg) rotateZ(0deg) scale(0.94);
+}
+
 .header {
   padding-top: 5rem;
 }
