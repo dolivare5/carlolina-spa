@@ -2,6 +2,7 @@
 @use "../../base/mixins" as m;
 
 .bienvenida{
+    padding: 2rem 0;
     text-align: center;
     &__heading{
         @include m.headingCursiva;
