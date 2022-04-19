@@ -38,14 +38,24 @@
     &-pagination-bullet-active{
         background-color: v.$primario;
     }
+    &-button-prev, &-rtl &-button-next {
+        @include m.tablet{
+            left: 11rem;
+        }
 
-    &-button-next:after, &-rtl &-button-prev:after{
-        margin-left: -11rem;
+        @include m.desktop{
+            left: 2rem;
+        }
     }
+    &-button-next:after, &-rtl &-button-prev:after{
+        margin-left: -2rem;
+        @include m.tablet{
+            margin-left: -11rem;
+        }
 
-    &-cube-shadow{
-        height: 1155px;
-        transform: translate3d(0px, 580.5px, -577.5px) rotateX(90deg) rotateZ(0deg) scale(0.94);
+        @include m.desktop{
+            margin-left: -20rem;
+        }
     }
 
 }
